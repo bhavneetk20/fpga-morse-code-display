@@ -40,10 +40,8 @@ src/
 
 > The source in this repo was reconstructed from the module design documented in the [original project report](./Project_Report.pdf) (the lab environment's Quartus project was not preserved). The architecture, encodings, and timing match the reported design.
 
-## Team
+## Team Member
+Bhavneet Kaur (218501361)
+Jaideep Singh (218472241)
 
-Built with Jaideep Singh.
 
-## References
-
-- [HarrishElango/Binary-ASCII-to-Morse-Code](https://github.com/HarrishElango/Binary-ASCII-to-Morse-Code) — a related DE10-Lite Morse implementation consulted during development
