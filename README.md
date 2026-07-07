@@ -28,8 +28,22 @@ LED + relay driven through a transistor amplifier from the `Arduino_IO12` pin, p
 
 `Verilog HDL` · `Intel DE10-Lite (MAX 10)` · `Quartus Prime` · `FSM design`
 
+## Source code
+
+```
+src/
+├── morsedisplay.v    # Top module — switch input, HEX displays, FSM wiring
+├── fsm.v             # Transmission FSM (dot/dash/gap sequencing)
+├── translateMorse.v  # Letter → Morse pattern + length lookup
+└── clk_xx.v          # 50 MHz → 0.5 s enable-pulse clock divider
+```
+
+> The source in this repo was reconstructed from the module design documented in the [original project report](./Project_Report.pdf) (the lab environment's Quartus project was not preserved). The architecture, encodings, and timing match the reported design.
+
 ## Team
 
 Built with Jaideep Singh.
 
-> ⚠️ Verilog source from the original lab environment is being recovered and will be added. Design details and timing analysis are in the report and demo video above.
+## References
+
+- [HarrishElango/Binary-ASCII-to-Morse-Code](https://github.com/HarrishElango/Binary-ASCII-to-Morse-Code) — a related DE10-Lite Morse implementation consulted during development
