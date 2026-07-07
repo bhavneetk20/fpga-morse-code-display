@@ -1,8 +1,8 @@
-# FPGA Morse Code Display ⚡
+# FPGA Morse Code Display 
 
 Morse code translator implemented on the **Intel DE10-Lite FPGA** in **Verilog HDL** — converts English letters (A–Z) to Morse code with synchronized LED blinks, mechanical-relay clicks, and 7-segment display output. Built for **EECS 3201 (Digital Logic Design)** at York University.
 
-🎥 **[Watch the demo](https://youtube.com/shorts/Qp6rLKzYpxg)** · 📄 [Project report](./Project_Report.pdf)
+**[Watch the demo](https://youtube.com/shorts/Qp6rLKzYpxg)** · [Project report](./Project_Report.pdf)
 
 ## How it works
 
@@ -31,9 +31,9 @@ LED + relay driven through a transistor amplifier from the `Arduino_IO12` pin, p
 ## Source code
 
 ```
-Project_3201MorseCode.v     # All modules: top (HEX display logic), fsm, clk_xx, translateMorse
-Project_3201MorseCode.qsf   # Quartus settings — MAX 10 (10M50DAF484C6GES) pin assignments
-Project_3201MorseCode.qpf   # Quartus Prime project file
+Project_3201MorseCode.v # All modules: top (HEX display logic), fsm, clk_xx, translateMorse
+Project_3201MorseCode.qsf # Quartus settings — MAX 10 (10M50DAF484C6GES) pin assignments
+Project_3201MorseCode.qpf # Quartus Prime project file
 ```
 
 ### Build & run
